@@ -15,7 +15,8 @@
 
 \title{\textbf{Facial Expression Recognition System} \\[4pt]
 \large A Deep Learning Approach Using Convolutional Neural Networks}
-\author{Project Report}
+\author{Bilal Magguilej \\ El-Ghrich Salman}
+
 \date{\today}
 
 \begin{document}
@@ -27,11 +28,8 @@
 \tableofcontents
 \newpage
 
-\section{Abstract}
-This report documents the development of a Facial Expression Recognition (FER) system capable of classifying seven distinct human emotions---angry, disgust, fear, happy, neutral, sad, and surprise---from facial images. The system is built using a custom Convolutional Neural Network (CNN) implemented with TensorFlow and Keras. It encompasses a complete pipeline spanning data preprocessing, model training with GPU acceleration, offline evaluation, and real-time webcam-based inference. The final model achieves a test accuracy of 57\% on the FER2013-derived dataset and runs in real time using DirectML-accelerated inference on a local GPU.
-
 \section{Introduction}
-Facial expression recognition is a fundamental problem in computer vision with applications in human-computer interaction, affective computing, mental health monitoring, and user experience analysis. The objective of this project was to build a complete FER system from scratch---from raw image data to a live webcam demo---using only TensorFlow and open-source computer vision libraries.
+Facial expression recognition is a fundamental problem in computer vision with applications in human-computer interaction, affective computing, mental health monitoring, and user experience analysis. The objective of this project was to build a complete FER system from scratch---from raw image data to a live webcam demo---using only TensorFlow and open-source computer vision libraries. The full source code and documentation are available at: \url{https://github.com/El-Ghrich/Facial-Expression-Recognition-System.git}.
 
 The system is organized into three interconnected modules:
 \begin{enumerate}
@@ -200,13 +198,5 @@ Key decisions and their rationale:
 
 \section{Conclusion}
 This project successfully implemented a complete facial expression recognition pipeline from data loading to real-time deployment. The custom CNN with 685K parameters achieved 57\% accuracy on seven-class emotion classification, with ``happy'' and ``surprise'' being the most reliably detected emotions. The system runs in real time on consumer GPU hardware via DirectML acceleration.
-
-\subsection*{Future Work}
-\begin{itemize}
-    \item Address class imbalance for ``disgust'' via oversampling or weighted loss functions.
-    \item Explore deeper architectures (ResNet, EfficientNet) for improved accuracy.
-    \item Replace Haar Cascade with a deep learning face detector (MTCNN, RetinaFace) for better detection of non-frontal faces.
-    \item Fine-tune on in-the-wild data for better real-world generalization.
-\end{itemize}
 
 \end{document}
