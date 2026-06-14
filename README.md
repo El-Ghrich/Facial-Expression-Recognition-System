@@ -1,5 +1,12 @@
 # Facial Expression Recognition
 
+## Acknowledgment
+
+This project was developed under the supervision of **LACHKAR ABDELMOUNAIM** as part of the **as part of the "Image Processing" module** at the **École Nationale des Sciences Appliquées de Tanger (ENSA Tanger)**.
+
+Anyone using, reproducing, or adapting this GitHub repository is kindly requested to acknowledge its academic origin by citing the supervisor, the project context, and the institution in the description of their work.
+
+
 A deep learning system that recognizes 7 emotions (angry, disgust, fear, happy, neutral, sad, surprise) from facial images using a custom CNN built with TensorFlow and Keras. Includes offline evaluation and real-time webcam inference.
 
 ## Project Structure
